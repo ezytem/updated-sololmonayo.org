@@ -1,0 +1,145 @@
+/* Navbar Styles */
+.navbar {
+  background: #333;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 60px; /* Adjust the size of the logo as needed */
+  width: auto;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  color: #10cfbf;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  min-width: 200px;
+  z-index: 999;
+}
+
+.dropdown-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-link:hover,
+.dropdown-link:focus {
+  background-color: #555;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #333;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-links {
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: #333;
+  }
+
+  .dropdown-link {
+    padding-left: 2rem;
+  }
+
+  .nav-item:hover .dropdown-menu,
+  .nav-item .dropdown-menu:hover {
+    display: none;
+  }
+}

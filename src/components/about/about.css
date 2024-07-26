@@ -1,0 +1,111 @@
+/* Utility classes */
+.u-max-width-100 {
+  max-width: 100%;
+}
+
+.u-height-auto {
+  height: auto;
+}
+
+.u-object-cover {
+  object-fit: cover;
+}
+
+.u-border-radius-8 {
+  border-radius: 8px;
+}
+
+.u-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* General styles for the About section */
+.about {
+  background-color: #f8f8f8;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.about .container {
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  text-align: center; /* Center-align heading text */
+}
+
+.about .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center; /* Center-align paragraph text */
+}
+
+.about .col-2 p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.about .about-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .about .container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .about .col-2 {
+    padding: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about .about-image {
+    max-height: 300px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about .col-2 p {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about .about-image {
+    max-height: 250px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about .col-2 p {
+    font-size: 0.75rem;
+  }
+}

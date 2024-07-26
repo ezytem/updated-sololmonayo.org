@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Background Image for Login Page */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(248, 249, 250, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form .error {
+  color: red;
+}
+
+.login-form input::placeholder {
+  color: #aaa;
+}
+
+/* Responsive adjustments for devices with a max width of 567px */
+@media (max-width: 567px) {
+  .login-container {
+    max-width: 90%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .login-form input {
+    font-size: 14px;
+  }
+
+  .login-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

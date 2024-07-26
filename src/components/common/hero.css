@@ -1,0 +1,82 @@
+/* General styles for the Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+    background-image: url('/images/bg.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out, slideBg 10s infinite alternate;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideBg {
+    0% {
+      background-position: center;
+    }
+    100% {
+      background-position: center bottom;
+    }
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .hero {
+      height: 40vh; /* Adjust the height for smaller screens */
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero {
+      height: 30vh; /* Adjust the height for extra small screens */
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 0.875rem;
+    }
+  }
+  

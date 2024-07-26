@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero section styling */
+.next-edition-hero, .competition-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjust the height as needed */
+  background-size: cover; /* Ensures the image covers the whole section */
+  background-position: center; /* Centers the image */
+}
+
+/* Specific hero images */
+.next-edition-hero {
+  background: url('https://i.ibb.co/fd687RV/6th-edition.png') center/cover no-repeat;
+}
+
+.competition-hero {
+  background: url('https://cdn.vectorstock.com/i/500p/32/36/winner-podium-made-from-stacks-of-books-vector-48663236.jpg') center/cover no-repeat;
+}
+
+/* Competition section styling */
+.competition-section {
+  padding: 40px 20px;
+  background-color: #f7f1f1;
+  color: #333;
+  text-align: center;
+}
+
+.competition-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #d32f2f;
+}
+
+.competition-section p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+}
+
+.next-edition-button {
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.next-edition-button:hover {
+  background-color: #b71c1c;
+}
+
+/* NextEdition section styling */
+.next-edition-section {
+  padding: 40px 20px;
+  background-color: #f7f1f1;
+  color: #333;
+  text-align: center;
+}
+
+.next-edition-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #d32f2f;
+}
+
+.next-edition-section p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Form styling */
+.registration-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Status message styling */
+.status-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .next-edition-hero, .competition-hero {
+    height: 40vh; /* Adjust the height for smaller screens */
+  }
+
+  .competition-section, .next-edition-section {
+    padding: 30px 15px;
+  }
+
+  .competition-section h2, .next-edition-section h2 {
+    font-size: 24px;
+  }
+
+  .competition-section p, .next-edition-section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .next-edition-button, .register-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-edition-hero, .competition-hero {
+    height: 30vh; /* Adjust the height for smaller screens */
+  }
+
+  .competition-section, .next-edition-section {
+    padding: 20px 10px;
+  }
+
+  .competition-section h2, .next-edition-section h2 {
+    font-size: 20px;
+  }
+
+  .competition-section p, .next-edition-section p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .next-edition-button, .register-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

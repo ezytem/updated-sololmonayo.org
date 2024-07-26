@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url('data:image/jpeg;base64,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') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 0 1rem;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Fade-in up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Previous editions styles */
+.previous-editions {
+  padding: 40px 20px;
+  background-color: aliceblue;
+  margin-top: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.card .text {
+  margin-top: 15px;
+  color: #a91b1b;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    max-width: 50%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    height: 30vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    max-width: 100px;
+  }
+}

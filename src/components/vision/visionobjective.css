@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero section styles */
+.vision-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust the height as needed */
+  background: url('https://i.ibb.co/x7h2j0p/landing-page.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.vision-hero-content {
+  padding: 0 1rem;
+}
+
+.vision-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.vision-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Vision Objectives section styles */
+.vision-objectives-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1eded;
+  font-family: 'Roboto', sans-serif;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.vision-objectives-card {
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.vision-objectives-card:hover {
+  box-shadow: 0 16px 32px rgba(74, 150, 250, 0.7);
+}
+
+.vision-objectives-text h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.vision-objectives-text h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: linear-gradient(to right, #72092e, #000);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.vision-objectives-text p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.vision-objectives-text button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.vision-objectives-text button:hover {
+  background-color: #0056b3;
+}
+
+.vision-objectives-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 250px;
+  position: relative;
+}
+
+.vision-objectives-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 16px 32px rgba(74, 150, 250, 0.7);
+}
+
+.vision-objectives-images .image-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vision-objectives-images .image-card {
+  height: 150px;
+  object-fit: cover;
+}
+
+.center-image {
+  margin-left: 0;
+  margin-top: 15px;
+  z-index: 2;
+}
+
+.single-image {
+  margin-top: 1px;
+  width: 100%;
+  height: auto;
+}
+
+/* Ensure the container doesn't overflow on smaller screens */
+@media (max-width: 768px) {
+  .vision-objectives-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+  }
+
+  .vision-objectives-card {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .vision-objectives-images {
+    margin-right: 0;
+  }
+
+  .center-image {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-hero {
+    height: 30vh; /* Adjust the height for smaller screens */
+  }
+
+  .vision-hero h1 {
+    font-size: 2rem;
+  }
+
+  .vision-hero p {
+    font-size: 1rem;
+  }
+
+  .vision-objectives-card {
+    margin-top: 200px;
+  }
+
+  .vision-objectives-images {
+    max-width: 100%;
+  }
+
+  .image-card {
+    height: 120px;
+  }
+
+  .single-image {
+    height: 120px;
+  }
+}
+
+@media (max-width: 360px) {
+  .vision-hero {
+    height: 25vh; /* Adjust the height for smaller screens */
+  }
+
+  .vision-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .vision-hero p {
+    font-size: 0.875rem;
+  }
+
+  .vision-objectives-card {
+    margin-top: 180px;
+  }
+
+  .image-card {
+    height: 100px;
+  }
+
+  .single-image {
+    height: 100px;
+  }
+}
